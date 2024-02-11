@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         val database = FirebaseDatabase.getInstance()
         val referencia = database.getReference("personas")
 
-        ////////////////Paso 2 -Programo el boton
+        ////////////////Paso 2 -Programacion del boton
         miBotonAgregar.setOnClickListener {
             //LLenar los datos que el usuario quiere subir
             val personaNueva = Personas("${miNombre.text}", "${miApellido.text}", "${miCiudad.text}")
@@ -139,6 +139,7 @@ class MainActivity : AppCompatActivity() {
                     1 -> actualizarDato(dato)
                 }
             }
+            //Mostrar la alerta
             builder.show()
         }
     }
