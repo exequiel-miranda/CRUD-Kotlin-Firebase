@@ -113,7 +113,7 @@ class MainActivity : AppCompatActivity() {
 
                 builder.setView(layout)
 
-                //Agregar botones
+                //Agregar botones a la alerta de actualizar datos
                 builder.setPositiveButton("Actualizar"){ dialog, which ->
                     //Tomamos los nuevos valores
                     val nuevoNombre = nombreEditText.text.toString()
